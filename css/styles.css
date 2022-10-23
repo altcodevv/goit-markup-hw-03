@@ -405,9 +405,6 @@ img {
     border: 1px solid var(--project-bg-color);
     border-top: 0;
 }
-.img {
-    margin-bottom: 20px;
-}
 .title.project {
     margin-bottom: 4px;
 
