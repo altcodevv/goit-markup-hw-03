@@ -102,8 +102,8 @@ img {
 }
 .site-nav .link {
     display: block;
-    padding-top: 50px;
-    padding-bottom: 50px;
+    padding-top: 32px;
+    padding-bottom: 32px;
     
     text-decoration: none;
     font-weight: 500;
@@ -294,36 +294,30 @@ img {
 
 .page-footer {
     background-color: var(--second-bg-color);
+    padding-top: 60px;
+    padding-bottom: 60px;
 }
 .footer.logo {
-    padding-top: 60px;
     margin-bottom: 20px;
 }
 .logo-studio-footer {
     color: var(--main-bg-color);
 }
-.footer-location {
-    margin-bottom: 9px;
-}
-.footer-location .link {
+.location.item .link {
     color: var(--main-bg-color);
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
 }
-.footer-contacts .link {
+.contact.item .link {
     color: rgba(255, 255, 255, 0.6);
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
 }
-.footer-contacts.mail {
+.footer-contacts .item:not(:last-child) {
     margin-bottom: 9px;
 }
-.footer-contacts.tel {
-    padding-bottom: 60px;
-}
-
 .footer-contacts .link:hover,
 .footer-contacts .link:focus {
     color: var(--accent-color);
@@ -334,10 +328,11 @@ img {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    
+    margin-bottom: 50px;
 }
 .filter-container .item {
     margin-right: 8px;
-    margin-bottom: 50px;
 }
 .filter-container .item:last-child {
     margin-right: 0;
