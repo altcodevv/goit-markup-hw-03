@@ -8,26 +8,39 @@
     --cards-bg-color: #f5f4fa;
     --project-bg-color: #eee;
 }
+
 html {
     box-sizing: border-box;
 }
+
 *,
 *::before,
 *::after {
     box-sizing: inherit;
 }
+
 body {
     background-color: var(--main-bg-color);
     color: var(--main-text-color);
     font-family: Roboto, sans-serif;
 }
-h1, h2 , h3, h4, h5, h6, ul, p {
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+p {
     margin: 0;
     padding: 0;
 }
+
 button {
     font-family: inherit;
 }
+
 img {
     display: block;
     max-width: 100%;
@@ -38,6 +51,7 @@ img {
 .list {
     list-style: none;
 }
+
 /* посилання це строчний елемент, для можливості додавання стилів (висота/ширина необхідно
 зробити строчно-блочним */
 .link {
@@ -46,6 +60,7 @@ img {
     text-decoration: none;
     font-style: normal;
 }
+
 /* gerenal div container */
 .container {
     width: 1200px;
@@ -68,6 +83,7 @@ img {
     letter-spacing: 0.03em;
     color: var(--accent-color);
 }
+
 .logo-studio {
     color: var(--black);
 }
@@ -77,15 +93,18 @@ img {
     border: 0;
     border-bottom: 1px solid #ececec;
 }
+
 .header {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
+
 .main-nav {
     display: flex;
     align-items: center;
 }
+
 .site-nav {
     display: flex;
     margin-left: 93px;
@@ -100,11 +119,12 @@ img {
 .site-nav .item:not(:last-child) {
     margin-right: 50px;
 }
+
 .site-nav .link {
     display: block;
     padding-top: 32px;
     padding-bottom: 32px;
-    
+
     text-decoration: none;
     font-weight: 500;
     font-size: 14px;
@@ -112,19 +132,24 @@ img {
     letter-spacing: 0.02em;
     color: var(--title-text-color);
 }
+
 .site-nav .link:hover,
 .site-nav .link:focus {
     color: var(--accent-color);
 }
+
 .site-nav .link.current {
     color: var(--accent-color);
 }
+
 .contacts-nav {
     display: flex;
 }
+
 .contacts-nav .item:not(:last-child) {
     margin-right: 50px;
 }
+
 .contacts-nav .link {
     display: block;
     padding-top: 32px;
@@ -137,13 +162,16 @@ img {
     letter-spacing: 0.02em;
     color: var(--main-text-color);
 }
+
 .contacts-nav .link:hover,
 .contacts-nav .link:focus {
     color: var(--accent-color);
 }
+
 .contacts-nav .link.current {
     color: var(--accent-color);
 }
+
 /* hero */
 .section.hero {
     padding-top: 200px;
@@ -152,12 +180,13 @@ img {
     text-align: center;
     background-color: var(--second-bg-color);
 }
+
 .hero-title {
     width: 696px;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 30px;
-    
+
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
@@ -165,12 +194,13 @@ img {
     text-transform: uppercase;
     color: var(--main-bg-color);
 }
+
 .hero-button {
     padding: 10px 32px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border: 0;
     border-radius: 4px;
-    
+
     color: var(--main-bg-color);
     background-color: var(--accent-color);
     font-weight: 700;
@@ -185,6 +215,7 @@ img {
     display: flex;
     align-items: flex-start;
 }
+
 .visually-hidden {
     position: absolute;
     white-space: nowrap;
@@ -193,16 +224,18 @@ img {
     overflow: hidden;
     border: 0;
     padding: 0;
-    clip:rect(0 0 0 0);
+    clip: rect(0 0 0 0);
     clip-path: inset(50%);
     margin: -1px;
 }
+
 .title {
     color: var(--title-text-color);
 }
+
 .features-title {
     margin-bottom: 10px;
-    
+
     color: var(--title-text-color);
     font-weight: 700;
     font-size: 14px;
@@ -210,16 +243,19 @@ img {
     letter-spacing: 0.03em;
     text-transform: uppercase;
 }
+
 .features-list .item:not(:last-child) {
     margin-right: 30px;
 }
+
 .features-list .item {
     flex-basis: calc((100% - 90px) / 4);
 }
+
 .text-title {
     color: var(--main-text-color);
     font-size: 14px;
-    line-height: 1.71;    
+    line-height: 1.71;
     letter-spacing: 0.03em;
 }
 
@@ -227,12 +263,15 @@ img {
 .section.no-padding {
     padding-top: 0;
 }
+
 .box-list {
     display: flex;
 }
+
 .box-list .item:not(:last-child) {
     margin-right: 30px;
 }
+
 .title.whatwedo {
     margin-bottom: 50px;
 
@@ -247,48 +286,56 @@ img {
 .section.team {
     background-color: var(--cards-bg-color);
 }
+
 .title.team {
     margin-bottom: 50px;
-    
+
     font-weight: 700;
     font-size: 36px;
     line-height: 1.17;
     letter-spacing: 0.03em;
     text-align: center;
 }
+
 .cards {
     display: flex;
     flex-wrap: wrap;
 }
+
 .cards .team-card:not(:last-child) {
     margin-right: 30px;
 }
+
 .team-card {
     flex-basis: calc((100% - 90px) / 4);
-    
+
     background-color: var(--main-bg-color);
     text-align: center;
-    
+
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
 }
+
 .text-card {
     padding-top: 30px;
     padding-bottom: 30px;
 }
+
 .title.card {
     margin-bottom: 10px;
-   
+
     font-weight: 500;
     font-size: 16px;
     line-height: 1.19;
     letter-spacing: 0.03em;
 }
+
 .text-title.card {
     font-size: 16px;
     line-height: 1.19;
     letter-spacing: 0.03em;
 }
+
 /* footer */
 
 .page-footer {
@@ -296,52 +343,62 @@ img {
     padding-top: 60px;
     padding-bottom: 60px;
 }
+
 .footer.logo {
     margin-bottom: 20px;
 }
+
 .logo-studio-footer {
     color: var(--main-bg-color);
 }
+
 .location.item .link {
     color: var(--main-bg-color);
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
 }
+
 .contact.item .link {
     color: rgba(255, 255, 255, 0.6);
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
 }
+
 .footer-contacts .item:not(:last-child) {
     margin-bottom: 9px;
 }
+
 .footer-contacts .link:hover,
 .footer-contacts .link:focus {
     color: var(--accent-color);
 }
+
 /* portfolio.html*/
 /* filters flex*/
 .filter-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    
+
     margin-bottom: 50px;
 }
+
 .filter-container .item {
     margin-right: 8px;
 }
+
 .filter-container .item:last-child {
     margin-right: 0;
 }
+
 /* filter buttons */
 .filter-btn {
     padding: 6px 22px;
     border: 0;
     border-radius: 4px;
-    
+
     background-color: var(--cards-bg-color);
     color: var(--title-text-color);
     font-weight: 500;
@@ -352,25 +409,27 @@ img {
 
     cursor: pointer;
 }
+
 .filter-btn:hover,
 .filter-btn:focus {
     background-color: var(--accent-color);
     color: var(--main-bg-color);
 
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
-    0px 1px 2px rgba(0, 0, 0, 0.08),
-    0px 2px 2px rgba(0, 0, 0, 0.12);
+        0px 1px 2px rgba(0, 0, 0, 0.08),
+        0px 2px 2px rgba(0, 0, 0, 0.12);
 }
+
 .filter-btn.active.current {
     background-color: var(--accent-color);
     color: var(--main-bg-color);
 
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
-    0px 1px 2px rgba(0, 0, 0, 0.08),
-    0px 2px 2px rgba(0, 0, 0, 0.12);
+        0px 1px 2px rgba(0, 0, 0, 0.08),
+        0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
-/* Функція calc для динамічної ширини = calc(100% - кількість марджинів у рядку* значення марджина) / кількість елементів у ряді */ 
+/* Функція calc для динамічної ширини = calc(100% - кількість марджинів у рядку* значення марджина) / кількість елементів у ряді */
 
 /* projects flex box */
 .project-container {
@@ -378,9 +437,11 @@ img {
     flex-wrap: wrap;
     gap: 30px;
 }
+
 .project {
     flex-basis: calc((100% - 60px) / 3);
 }
+
 /* варіант з відео репети */
 /* .project {
     width: calc(100% - 60px) / 3;
@@ -399,6 +460,7 @@ img {
     border: 1px solid var(--project-bg-color);
     border-top: 0;
 }
+
 .title.project {
     margin-bottom: 4px;
 
@@ -407,6 +469,7 @@ img {
     line-height: 2;
     letter-spacing: 0.06em;
 }
+
 .text-title.project {
     font-size: 16px;
     line-height: 1.87;
